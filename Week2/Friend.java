@@ -14,4 +14,5 @@ public class Friend {
     public String getFriendName(){
         return myFriend;
     }
+    //this is a test
 }
