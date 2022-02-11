@@ -14,6 +14,10 @@ public class Playground {
 
         // String class Method Examples
         String dogName = "Murray";
+        String replace = dogName.replace('r', 'n');
+        System.out.println(replace);
+
+
         dogName.toUpperCase();
         System.out.println(dogName.toUpperCase());
         printer(dogName.toUpperCase());
@@ -33,6 +37,28 @@ public class Playground {
 
 
         // printer(dogNameUpperQuestionExclamation);
+        // String friendName = Friend.myFriendName();
+
+        // System.out.println(friendName);
+
+        System.out.println(Friend.myFriendName());
+        //object instantiation
+        Friend myFriend = new Friend();
+
+        System.out.println(myFriend.getFriendName());
+        myFriend.setFriendName("jake");
+        System.out.println(myFriend.getFriendName());
+
+        Friend secondFriend = new Friend();
+
+        secondFriend.setFriendName("Sam");
+
+        System.out.println(secondFriend.getFriendName());
+
+        
+
+
+
         }
     //Create our own method to add Exclamation Point
     public static void addExclamationPoint(String s) {
