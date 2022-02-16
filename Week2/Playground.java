@@ -55,7 +55,21 @@ public class Playground {
 
         System.out.println(secondFriend.getFriendName());
 
+        myFriend.setFriendColorAndAge("black", 20);
+
+        System.out.println("My Friends name is " + myFriend.getFriendName() + ". His favorite color is " + 
+            myFriend.getFriendColor() + ". His age is " + myFriend.getFriendAge() + "." );
+
+        System.out.println(myFriend.match(myFriend.getFriendName()));
+        myFriend.setFriendName("Greg");
+        System.out.println(myFriend.match(myFriend.getFriendName()));
+
+        System.out.println(myFriend.subs("mouse"));
         
+        // System.out.println(myFriend.match(myFriend.getFriendName(), secondFriend.getFriendName()));
+        // myFriend.setFriendName("Sam");
+        // System.out.println(myFriend.match(myFriend.getFriendName(), secondFriend.getFriendName()));
+        // 
 
 
 
