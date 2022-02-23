@@ -15,5 +15,6 @@ public class BankAccountTester {
         System.out.println(gregChecking.getBalance());
         gregChecking.monthlyfee();
         System.out.println(gregChecking.getBalance());
+        // this is a test
     }
 }
