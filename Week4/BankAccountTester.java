@@ -16,6 +16,9 @@ public class BankAccountTester {
         gregChecking.monthlyfee();
         System.out.println(gregChecking.getBalance());
 
+        
+        bobChecking.calcInterest(bobChecking.getBalance(), 5, 0.15, 12);
+
         int menuSelection = BankAccount.menu();
         System.out.println(menuSelection);
         Scanner keyboard = new Scanner(System.in);
@@ -28,11 +31,28 @@ public class BankAccountTester {
             double depositAmount = keyboard.nextDouble();
             bobChecking.deposit(depositAmount);
             System.out.println("Amount: $"+depositAmount + " Was Deposited");
-            System.err.println("Total Balance: $" + bobChecking.getBalance());
+            System.out.println("Total Balance: $" + bobChecking.getBalance());
 
+        }else if (menuSelection == 3){
+            System.out.println("Please enter the amount to withdraw");
+            double withdrawAmount = keyboard.nextDouble();
+            bobChecking.withdraw(withdrawAmount);
+            
+            System.out.println("Amount: $"+withdrawAmount + " Was Withdrew");
+            System.out.println("Total Balance: $" + bobChecking.getBalance());
+
+        }else if(menuSelection == 4){
+
+            System.out.println("Please enter the amount of years");
+            int years = keyboard.nextInt();
+            bobChecking.calcInterest(bobChecking.getBalance(), years, 0.15, 12);
+
+
+
+        }else if (menuSelection == 0){
+            System.out.println("Have a nice day!");
         }else{
             System.out.println("Error: No Valid Selection");
         }
-
     }
 }
