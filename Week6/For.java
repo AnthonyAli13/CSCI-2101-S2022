@@ -12,10 +12,10 @@ public class For {
         // Computers count at 0
         int students = 22;
         int children = 0;
-        for(int i = 0; i < 1; i++){
+        for(int i = 0; i < 10; i++){
             System.out.println(i +" | Greg");
         }
-        for (int index = students; index > 0; index-=5) {
+        for(int index = students; index > 0; index-=5) {
             // System.out.println("#"+students);
             System.out.println("Hello " + index + " Welcome to Class");
             children += 2;
@@ -68,5 +68,20 @@ public class For {
         }
         System.out.println("Hello");
 
+        double total = 0;
+        int count = 0;
+
+        Scanner in = new Scanner(System.in);
+
+        for (int i = 0; i <= 5; i++) {
+            double input = in.nextDouble();
+            total = total + input;
+            count ++;
+        }
+        double average = 0;
+        if (count > 0){
+            average = total / count;
+        }
+        System.out.println(average);
     }
 }
