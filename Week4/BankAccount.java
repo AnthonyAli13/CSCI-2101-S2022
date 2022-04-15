@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class BankAccount {
     private double balance;
+    private String name;
 
     
     public BankAccount(){
@@ -13,6 +14,16 @@ public class BankAccount {
     public BankAccount(double initalBalance){
         balance = initalBalance;
     }
+
+    public BankAccount(String initialName, double initialBalance){
+        balance = initialBalance;
+        name = initialName;
+    }
+
+    public String getname(){
+        return name;
+    }
+
 
 
     public double getBalance(){

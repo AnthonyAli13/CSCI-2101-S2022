@@ -27,7 +27,10 @@ public class arrays {
         anArray[7]= 800;
         anArray[8]= 900;
         anArray[9]= 1000;
-        //anArray[10]= 1100;
+        // this will not work since that array is size 10 
+        //anArray[10]= 1100
+        // overwrite value in an array 
+        anArray[1] =  0;
 
         System.out.println("Element at index 0: "
         + anArray[0]);
@@ -57,8 +60,7 @@ public class arrays {
 
         // for loop in java with array
         for (int i = 0; i < shortArray.length; i++) {
-            System.out.println(shortArray[i]);
-            
+            System.out.println(shortArray[i]);   
         }
 
         // System.out.println("Element at index 1: "
@@ -97,6 +99,7 @@ public class arrays {
         System.out.println(namesunknown[2]);
 
         Scanner keyboard = new Scanner(System.in);
+        Scanner keyboard2 = new Scanner(System.in);
 
         // example showing scanner to save to an array
         System.out.println();
@@ -109,6 +112,15 @@ public class arrays {
             System.out.println(string);
         }
 
+        System.out.println("How big do you want the array?");
+
+        int arraysize = keyboard2.nextInt();
+
+        int[] userArray = new int[arraysize];
+
+        for (String string : namesunknown) {
+            System.out.println(string);
+        }
 
         
         // create array of string str length

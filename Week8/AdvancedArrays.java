@@ -49,7 +49,7 @@ public class AdvancedArrays {
 
         System.out.println(frontEnd(phoneNumber));
         // This wont work because we cant syso arrays
-        // System.out.println(Call911(phoneNumber));
+        System.out.println(Call911(phoneNumber));
         System.out.println(Arrays.toString(Call911(phoneNumber)));
         
     }
